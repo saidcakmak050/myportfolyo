@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Başvuru Sayfası</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+        .title {
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1rem;
+        }
+        .section-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            text-align: left;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 5px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+            justify-content: left;
+        }
+        .skill-tag {
+            background: #334155;
+            color: var(--text-main);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .contact-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .contact-btn:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Adını ve Soyadını buraya yaz -->
+        <h1>Adınız Soyadınız</h1>
+        
+        <!-- Başvurduğun pozisyonu veya alanını yaz -->
+        <div class="title">Yazılım Geliştirici / Aday</div>
+        
+        <!-- Kendinden kısaca bahset -->
+        <p>
+            Merhaba! Kendini geliştirmeye odaklı, yeni teknolojileri öğrenmeyi seven ve hedefleri doğrultusunda tutkuyla çalışan biriyim. Bu başvuru sayfası üzerinden benimle iletişime geçebilirsiniz.
+        </p>
+
+        <div class="section-title">Yetenekler & Beceriler</div>
+        <div class="skills">
+            <span class="skill-tag">HTML5 & CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Problem Çözme</span>
+            <span class="skill-tag">İletişim</span>
+            <span class="skill-tag">Takım Çalışması</span>
+        </div>
+
+        <!-- E-posta adresini buraya yaz -->
+        <a href="mailto:ornek@email.com" class="contact-btn">Bana Ulaşın</a>
+    </div>
+
+</body>
+</html>
